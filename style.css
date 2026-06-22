@@ -790,6 +790,36 @@ color:var(--amber);
 font-weight:600;
 }
 
+/* INSIGHTS PAGE COMPACT HERO */
+
+.insights-page .hero{
+    padding-top:40px !important;
+    padding-bottom:0 !important;
+}
+
+.insights-page .hero-content{
+    padding-bottom:0 !important;
+}
+
+.insights-page .hero h1{
+    margin-bottom:10px !important;
+}
+
+.insights-page .hero h2{
+    margin-bottom:10px !important;
+}
+
+.insights-page .hero-description{
+    margin-bottom:0 !important;
+}
+
+.insights-page .divider{
+    margin-top:0 !important;
+}
+
+.insights-page .section:first-of-type{
+    padding-top:0 !important;
+}
 /* ======================================
 ARTICLE PAGES
 ====================================== */
