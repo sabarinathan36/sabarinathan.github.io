@@ -700,33 +700,45 @@ footer p{
 INSIGHTS PAGE
 ============================================================ */
 
-.insights-page .hero-content{
-display:block;
-max-width:1200px;
-margin:0 auto;
-padding-bottom:20px !important;
+.insights-page .hero{
+    padding:60px var(--gutter) 0;
 }
 
-.insights-page .section{
-    padding-top:30px !important;
-    padding-bottom:50px !important;
+.insights-page .hero-content{
+    display:block;
+    max-width:1200px;
+    margin:0 auto;
+    padding-bottom:0 !important;
 }
 
 .insights-page .hero-text{
-width:100%;
-max-width:none;
+    width:100%;
+    max-width:none;
 }
 
 .insights-page .hero h1{
-max-width:none;
+    max-width:none;
 }
 
 .insights-page .hero h2{
-max-width:none;
+    max-width:none;
+    margin-bottom:16px;
 }
 
 .insights-page .hero-description{
-max-width:none;
+    max-width:none;
+}
+
+.insights-page .divider{
+    margin-top:10px;
+}
+
+.insights-page .section{
+    padding:20px var(--gutter) 40px !important;
+}
+
+.insights-page .section-title{
+    margin-bottom:24px !important;
 }
 
 /* ============================================================
@@ -776,30 +788,6 @@ color:var(--paper-dim);
 .article-link{
 color:var(--amber);
 font-weight:600;
-}
-
-/* ============================================================
-   INSIGHTS HERO REFINEMENT
-============================================================ */
-
-.insights-page .hero{
-    padding:60px var(--gutter) 0;
-}
-
-.insights-page .hero-content{
-    padding-bottom:40px;
-}
-
-.insights-page .hero h1{
-    font-size:clamp(3.5rem,6vw,5.8rem);
-}
-
-.insights-page .hero h2{
-    margin-bottom:16px;
-}
-
-.insights-page .hero-description{
-    max-width:1100px;
 }
 
 /* ======================================
