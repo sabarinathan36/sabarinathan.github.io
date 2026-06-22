@@ -829,6 +829,24 @@ font-weight:600;
     padding:60px var(--gutter) 20px;
 }
 
+/* Insights spacing fix */
+
+.insights-header{
+    margin-bottom:12px !important;
+}
+
+.insights-header h2{
+    margin:6px 0 !important;
+}
+
+.insights-header p{
+    margin:0 !important;
+}
+
+.insight-grid{
+    margin-top:0 !important;
+}
+
 /* ======================================
 ARTICLE PAGES
 ====================================== */
