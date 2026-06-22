@@ -203,7 +203,5 @@ Organizations seeking stronger cybersecurity outcomes should remember a simple p
 
 **Security tools provide capability. Security governance provides direction. Effective cybersecurity requires both.**
 
----
 
-*Author: Sabari Nathan C*
-*Cybersecurity Governance | IT Operations | Digital Transformation*
+
