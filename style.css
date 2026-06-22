@@ -733,10 +733,6 @@ INSIGHTS PAGE
     margin-top:10px;
 }
 
-.insights-page .section{
-    padding:20px var(--gutter) !important;
-}
-
 .insights-page .section-title{
     margin-bottom:24px !important;
 }
@@ -830,9 +826,6 @@ font-weight:600;
     margin-top:0 !important;
 }
 
-.insights-page .section:first-of-type{
-    padding-top:0 !important;
-}
 /* ======================================
 ARTICLE PAGES
 ====================================== */
