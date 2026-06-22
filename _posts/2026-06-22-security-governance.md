@@ -1,3 +1,9 @@
+---
+layout: post
+title: "Security Tools vs Security Governance"
+category: Cybersecurity
+---
+
 # Security Tools vs Security Governance
 
 Organizations today invest significantly in cybersecurity technologies. Firewalls, endpoint protection platforms, SIEM solutions, vulnerability scanners, identity management systems, threat intelligence services, and security monitoring tools have become standard components of modern security programs.
