@@ -790,6 +790,42 @@ text-decoration: none;
 text-decoration: underline;
 }
 
+.featured-article {
+    padding: 3rem;
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 24px;
+    margin-bottom: 2rem;
+}
+
+.featured-article h2 {
+    margin: 1rem 0;
+}
+
+.insight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.insight-card {
+    padding: 2rem;
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 20px;
+    transition: all .3s ease;
+}
+
+.insight-card:hover {
+    transform: translateY(-6px);
+}
+
+.insight-category {
+    display: inline-block;
+    padding: .35rem .75rem;
+    border-radius: 999px;
+    font-size: .75rem;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(255,255,255,.12);
+}
 /* ============================================================
    RESPONSIVE
    ============================================================ */
