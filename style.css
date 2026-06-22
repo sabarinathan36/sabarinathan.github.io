@@ -979,3 +979,9 @@ text-decoration: underline;
     .frame{ width:240px; height:270px; }
     .stats{ grid-template-columns:1fr 1fr; }
 }
+
+/* MUST BE LAST RULE IN FILE */
+
+body.insights-page section.section{
+    padding:20px var(--gutter) !important;
+}
