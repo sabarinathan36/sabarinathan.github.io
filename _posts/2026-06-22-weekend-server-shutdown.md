@@ -1,5 +1,4 @@
 ---
-
 layout: post
 title: "Should Servers Be Shut Down on Weekends?"
 category: Infrastructure & Business Continuity
