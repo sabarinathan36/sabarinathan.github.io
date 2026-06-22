@@ -16,7 +16,7 @@
 
 </head>
 
-<body>
+<body class="{% if page.url == '/insights.html' or page.url contains '/insights/' %}insights-page{% endif %}">
 
 {{ content }}
 
