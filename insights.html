@@ -1,3 +1,8 @@
+---
+layout: default
+title: Insights
+---------------
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -13,7 +18,7 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/style.css">
 
 </head>
 
@@ -22,44 +27,43 @@
 <nav class="nav">
     <div class="nav-mark">[<span>SN</span>] SABARI NATHAN C</div>
 
-<ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="index.html#portfolio">Portfolio</a></li>
-    <li><a href="index.html#capabilities">Capabilities</a></li>
-    <li><a href="index.html#contact">Contact</a></li>
-    <li><a href="resume.pdf" class="nav-cta">Resume</a></li>
-</ul>
-
+    <ul class="nav-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/index.html#portfolio">Portfolio</a></li>
+        <li><a href="/index.html#capabilities">Capabilities</a></li>
+        <li><a href="/index.html#contact">Contact</a></li>
+        <li><a href="/resume.pdf" class="nav-cta">Resume</a></li>
+    </ul>
 </nav>
 
 <!-- HERO -->
 
 <section class="hero insights-hero">
 
-<div class="hero-content">
+    <div class="hero-content">
 
-    <div class="hero-text">
+        <div class="hero-text">
 
-        <p class="tagline">
-            Cybersecurity · Governance · AI · IT Operations
-        </p>
+            <p class="tagline">
+                Cybersecurity · Governance · AI · IT Operations
+            </p>
 
-        <h1>Insights & Thought Leadership</h1>
+            <h1>Insights & Thought Leadership</h1>
 
-        <h2>
-            Practical perspectives from enterprise technology leadership.
-        </h2>
+            <h2>
+                Practical perspectives from enterprise technology leadership.
+            </h2>
 
-        <p class="hero-description">
-            Exploring cybersecurity governance, risk management,
-            artificial intelligence, IT service management,
-            digital transformation and operational excellence
-            through real-world experience.
-        </p>
+            <p class="hero-description">
+                Exploring cybersecurity governance, risk management,
+                artificial intelligence, IT service management,
+                digital transformation and operational excellence
+                through real-world experience.
+            </p>
+
+        </div>
 
     </div>
-
-</div>
 
 </section>
 
@@ -68,113 +72,88 @@
 <!-- FEATURED ARTICLE -->
 
 <section class="section">
-<div class="section-inner">
-    <div class="featured-article">
-        <span class="eyebrow">
-            Featured Insight
-        </span>
-        <h2>
-            Why Asset Inventory is the Foundation of Cybersecurity
-        </h2>
-        <p>
-            Security begins with visibility. Understanding what assets exist,
-            who owns them, and how they are classified forms the basis of
-            governance, risk management, compliance and operational resilience.
-        </p>
-        <a href="insights/asset-inventory.html"
-           class="btn btn-primary">
-           Read Featured Article
-        </a>
+
+    <div class="section-inner">
+
+        <div class="featured-article">
+
+            <span class="eyebrow">
+                Featured Insight
+            </span>
+
+            <h2>
+                Security Tools vs Security Governance
+            </h2>
+
+            <p>
+                Organizations invest heavily in cybersecurity technologies,
+                yet many security failures originate from weak governance,
+                unclear ownership and ineffective risk management.
+            </p>
+
+            <a href="/cybersecurity/2026/06/22/security-governance.html"
+               class="btn btn-primary">
+                Read Featured Article
+            </a>
+
+        </div>
+
     </div>
-</div>
+
 </section>
 
 <!-- RECENT ARTICLES -->
 
 <section class="section">
 
-<div class="section-inner">
+    <div class="section-inner">
 
-    <div class="section-title">
+        <div class="section-title">
 
-        <span class="eyebrow">
-            Latest Publications
-        </span>
-
-        <h2>
-            Recent Articles
-        </h2>
-
-    </div>
-
-    <div class="insight-grid">
-
-        <div class="insight-card">
-
-            <span class="insight-category">
-                Cybersecurity
+            <span class="eyebrow">
+                Latest Publications
             </span>
 
-            <h3>
-                Security Tools vs Security Governance
-            </h3>
+            <h2>
+                Recent Articles
+            </h2>
 
             <p>
-                Why technology alone cannot secure an organization.
+                Articles automatically generated from the Insights publishing platform.
             </p>
-
-            <a href="insights/security-governance.html"
-               class="article-link">
-                Read Article →
-            </a>
 
         </div>
 
-        <div class="insight-card">
+        <div class="insight-grid">
 
-            <span class="insight-category">
-                Infrastructure
-            </span>
+            {% for post in site.posts %}
 
-            <h3>
-                Should Servers Be Shut Down on Weekends?
-            </h3>
+            <div class="insight-card">
 
-            <p>
-                Balancing cost optimization with operational resilience.
-            </p>
+                <span class="insight-category">
+                    {{ post.category }}
+                </span>
 
-            <a href="insights/weekend-server-shutdown.html"
-               class="article-link">
-                Read Article →
-            </a>
+                <h3>
+                    {{ post.title }}
+                </h3>
 
-        </div>
+                <p>
+                    {{ post.excerpt | strip_html | truncate: 140 }}
+                </p>
 
-        <div class="insight-card">
+                <a href="{{ post.url }}"
+                   class="article-link">
+                    Read Article →
+                </a>
 
-            <span class="insight-category">
-                Risk Management
-            </span>
+            </div>
 
-            <h3>
-                Risk vs Vulnerability
-            </h3>
-
-            <p>
-                Understanding the difference that matters in cybersecurity.
-            </p>
-
-            <a href="insights/risk-vs-vulnerability.html"
-               class="article-link">
-                Read Article →
-            </a>
+            {% endfor %}
 
         </div>
 
     </div>
-
-</div>
 
 </section>
 
