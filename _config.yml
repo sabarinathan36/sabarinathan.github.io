@@ -1,1 +1,11 @@
+title: Sabari Nathan C
+description: IT Operations, Cybersecurity Governance and Digital Transformation
+baseurl: ""
+url: "https://sabarinathan.co.in"
+
+markdown: kramdown
+
+plugins:
+
+* jekyll-feed
 
