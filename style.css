@@ -804,34 +804,35 @@ text-decoration: underline;
 }
 
 /* ======================================
-   INSIGHTS HERO FULL WIDTH
+  INSIGHTS HERO 
 ====================================== */
 
 .insights-page .hero-content{
-    max-width:1400px;
+    display:block !important;
+    max-width:1400px !important;
+    width:100% !important;
 }
 
 .insights-page .hero-text{
-    max-width:1400px;
-    width:100%;
+    display:block !important;
+    width:100% !important;
+    max-width:none !important;
 }
 
 .insights-page .hero h1{
-    max-width:none;
-   font-size:clamp(4rem,7vw,6rem);
+    max-width:none !important;
 }
 
 .insights-page .hero h2{
-    max-width:none;
-    width:100%;
-    font-size:clamp(2rem,2.8vw,2.8rem);
+    max-width:none !important;
+    width:100% !important;
+    white-space:nowrap;
 }
 
 .insights-page .hero-description{
-    max-width:none;
-    width:100%;
-    font-size:1.3rem;
-    line-height:1.8;
+    max-width:none !important;
+    width:100% !important;
+    white-space:nowrap;
 }
 
 /* ======================================
