@@ -700,9 +700,7 @@ INSIGHTS PAGE
 ====================================== */
 
 .insights-page .hero {
-min-height: 45vh;
-padding-top: 7rem;
-padding-bottom: 4rem;
+padding: 40px var(--gutter) 20px;
 }
 
 .insights-page .hero-content {
@@ -760,7 +758,7 @@ margin-top: 24px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    min-height: auto;
+    min-height: 160px;
 
     transition: all .3s ease;
 }
@@ -782,14 +780,14 @@ opacity: 0.8;
 
 .insight-card h3 {
 font-family: "Fraunces", serif;
-font-size: 1.75rem;
+font-size: 1.5rem;
 line-height: 1.25;
-margin: 1rem 0;
+margin: 0.5rem 0;
 }
 
 .insight-card p {
-margin-bottom: 1rem;
-line-height: 1.7;
+margin-bottom: 0.5rem;
+line-height: 1.5;
 }
 
 .insight-card a {
