@@ -803,36 +803,26 @@ font-weight: 600;
 text-decoration: underline;
 }
 
-/* ======================================
-  INSIGHTS HERO 
-====================================== */
+/* INSIGHTS PAGE HERO OVERRIDES */
 
-.insights-page .hero-content{
-    display:block !important;
-    max-width:1400px !important;
-    width:100% !important;
-}
-
-.insights-page .hero-text{
-    display:block !important;
-    width:100% !important;
+.insights-page .hero-description{
     max-width:none !important;
-}
-
-.insights-page .hero h1{
-    max-width:none !important;
+    width:100% !important;
 }
 
 .insights-page .hero h2{
     max-width:none !important;
     width:100% !important;
-    white-space:nowrap;
 }
 
-.insights-page .hero-description{
+.insights-page .hero-text{
     max-width:none !important;
     width:100% !important;
-    white-space:nowrap;
+}
+
+.insights-page .hero-content{
+    max-width:1400px !important;
+    width:100% !important;
 }
 
 /* ======================================
