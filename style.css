@@ -818,6 +818,7 @@ text-decoration: underline;
 
 .insights-page .hero h1{
     max-width:none;
+   font-size:clamp(4rem,7vw,6rem);
 }
 
 .insights-page .hero h2{
