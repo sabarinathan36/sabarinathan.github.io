@@ -954,6 +954,26 @@ text-decoration: none;
 text-decoration: underline;
 }
 
+.article-breadcrumb{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:30px;
+    font-size:14px;
+}
+
+.article-breadcrumb a{
+    color:var(--paper-dim);
+    text-decoration:none;
+}
+
+.article-breadcrumb a:hover{
+    color:var(--amber);
+}
+
+.article-breadcrumb span{
+    color:var(--paper-faint);
+}
 /* ============================================================
    RESPONSIVE
    ============================================================ */
