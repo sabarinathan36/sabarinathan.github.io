@@ -1,4 +1,5 @@
 ---
+
 layout: default
 title: Insights
 ---
@@ -28,9 +29,7 @@ title: Insights
 
         <h1>Insights & Thought Leadership</h1>
 
-        <h2>
-            Practical perspectives from enterprise technology leadership.
-        </h2>
+        <h2>Practical perspectives from enterprise technology leadership.</h2>
 
         <p class="hero-description">
             Exploring cybersecurity governance, risk management, artificial intelligence, IT service management, digital transformation and operational excellence through real-world experience.
@@ -59,8 +58,7 @@ title: Insights
         </h2>
 
         <p>
-            Perspectives on cybersecurity, governance,
-            AI, IT operations and digital transformation.
+            Perspectives on cybersecurity, governance, AI, IT operations and digital transformation.
         </p>
 
     </div>
@@ -69,7 +67,7 @@ title: Insights
 
         {% for post in site.posts %}
 
-        <div class="insight-card">
+        <article class="insight-card">
 
             <span class="insight-category">
                 {{ post.category }}
@@ -83,12 +81,11 @@ title: Insights
                 {{ post.excerpt | strip_html | truncate: 140 }}
             </p>
 
-            <a href="{{ post.url }}"
-               class="article-link">
+            <a href="{{ post.url }}" class="article-link">
                 Read Article →
             </a>
 
-        </div>
+        </article>
 
         {% endfor %}
 
@@ -104,4 +101,3 @@ title: Insights
         Cybersecurity · Governance · AI · IT Leadership
     </p>
 </footer>
-
