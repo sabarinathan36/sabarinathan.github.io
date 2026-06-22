@@ -1,5 +1,5 @@
 ---
-layout: post.html
+layout: post
 title: "Security Tools vs Security Governance"
 category: Cybersecurity
 ---
