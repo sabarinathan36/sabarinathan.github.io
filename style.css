@@ -888,7 +888,42 @@ text-decoration: none;
 .article-back:hover {
 text-decoration: underline;
 }
+/* ======================================
+   INSIGHTS PAGE OVERRIDES
+====================================== */
 
+.insights-page .hero {
+    padding: 40px var(--gutter) 0;
+}
+
+.insights-page .hero-content {
+    padding-bottom: 30px;
+}
+
+.insights-page .section {
+    padding: 40px var(--gutter);
+}
+
+.insights-page .section-title {
+    margin-bottom: 30px;
+}
+
+.insights-page .featured-article {
+    margin-bottom: 20px;
+    padding: 2rem;
+}
+
+.insights-page .insight-grid {
+    gap: 1.25rem;
+}
+
+.insights-page .chip-grid {
+    margin-top: 1rem;
+}
+
+.insights-page footer {
+    margin-top: 30px;
+}
 /* ============================================================
    RESPONSIVE
    ============================================================ */
