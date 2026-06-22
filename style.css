@@ -704,6 +704,12 @@ INSIGHTS PAGE
 display:block;
 max-width:1200px;
 margin:0 auto;
+padding-bottom:20px !important;
+}
+
+.insights-page .section{
+    padding-top:30px !important;
+    padding-bottom:50px !important;
 }
 
 .insights-page .hero-text{
