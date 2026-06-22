@@ -728,10 +728,10 @@ INSIGHT CARDS
 ============================================================ */
 
 .insight-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
-gap:24px;
-margin-top:32px;
+    display:grid;
+    grid-template-columns:
+        repeat(auto-fit,minmax(320px,380px));
+    gap:24px;
 }
 
 .insight-card{
@@ -772,6 +772,29 @@ color:var(--amber);
 font-weight:600;
 }
 
+/* ============================================================
+   INSIGHTS HERO REFINEMENT
+============================================================ */
+
+.insights-page .hero{
+    padding:60px var(--gutter) 0;
+}
+
+.insights-page .hero-content{
+    padding-bottom:40px;
+}
+
+.insights-page .hero h1{
+    font-size:clamp(3.5rem,6vw,5.8rem);
+}
+
+.insights-page .hero h2{
+    margin-bottom:16px;
+}
+
+.insights-page .hero-description{
+    max-width:1100px;
+}
 
 /* ======================================
 ARTICLE PAGES
