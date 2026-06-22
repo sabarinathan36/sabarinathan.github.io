@@ -825,6 +825,9 @@ font-weight:600;
 .insights-page .divider{
     margin-top:0 !important;
 }
+.insights-hero{
+    padding:60px var(--gutter) 20px;
+}
 
 /* ======================================
 ARTICLE PAGES
