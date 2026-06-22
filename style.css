@@ -855,6 +855,18 @@ margin-bottom: 1rem;
 font-size: 1.3rem;
 }
 
+.article-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--amber);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.article-link:hover {
+    text-decoration: underline;
+}
+
 .article-content p {
 margin-bottom: 1.4rem;
 }
