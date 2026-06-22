@@ -804,6 +804,36 @@ text-decoration: underline;
 }
 
 /* ======================================
+   INSIGHTS HERO FULL WIDTH
+====================================== */
+
+.insights-page .hero-content{
+    max-width:1400px;
+}
+
+.insights-page .hero-text{
+    max-width:1400px;
+    width:100%;
+}
+
+.insights-page .hero h1{
+    max-width:none;
+}
+
+.insights-page .hero h2{
+    max-width:none;
+    width:100%;
+    font-size:clamp(2rem,2.8vw,2.8rem);
+}
+
+.insights-page .hero-description{
+    max-width:none;
+    width:100%;
+    font-size:1.3rem;
+    line-height:1.8;
+}
+
+/* ======================================
 ARTICLE PAGES
 ====================================== */
 
