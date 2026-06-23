@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: "Risk vs Vulnerability"
+title: "Replacing Steve"
 category: Cybersecurity Governance
 ---
 
