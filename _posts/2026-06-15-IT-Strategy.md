@@ -1,10 +1,8 @@
 ---
 layout: post
-title: "Practical IT Strategy"
+title: "My Perspective on Building a Practical IT Strategy"
 category: IT Governance
 ---
-
-# My Perspective on Building a Practical IT Strategy
 
 ## Introduction
 
