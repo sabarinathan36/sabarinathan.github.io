@@ -1015,6 +1015,25 @@ text-decoration: underline;
     .stats{ grid-template-columns:1fr 1fr; }
 }
 
+@media (min-width: 2200px){
+
+    .article-container{
+        max-width:1200px;
+    }
+
+    .article-content{
+        font-size:1.2rem;
+    }
+
+    .hero-description{
+        font-size:1.2rem;
+    }
+
+    .section-title p{
+        font-size:1.1rem;
+    }
+}
+
 /* MUST BE LAST RULE IN FILE */
 
 body.insights-page section.section{
