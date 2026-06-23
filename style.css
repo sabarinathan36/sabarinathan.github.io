@@ -499,6 +499,12 @@ a{ color:inherit; text-decoration:none; }
     max-width:520px;
 }
 
+.timeline-company{
+    color: var(--amber);
+    font-family: var(--font-mono);
+    font-size: 13px;
+    margin: 6px 0;
+}
 /* ============================================================
    PORTFOLIO (merged projects)
    ============================================================ */
