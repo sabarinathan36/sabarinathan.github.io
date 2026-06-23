@@ -144,43 +144,51 @@
 
         <div class="timeline">
 
-            <div class="timeline-item reveal">
-                <span class="node"></span>
-                <div class="timeline-year">Jun 2010 to Jul 2016</div>
-                <div class="timeline-content">
-                    <h3>IT Service Engineer</h3>
-                    <p><div class="timeline-company">Rohlx Technologies</div><br>Infrastructure support, field operations, end-user services.</p>
-                </div>
-            </div>
-
-            <div class="timeline-item reveal">
-                <span class="node"></span>
-                <div class="timeline-year">Aug 2016 to Jan 2019</div>
-                <div class="timeline-content">
-                    <h3>IT Incharge</h3>
-                    <p><div class="timeline-company">Tata Consultancy Services</div><br>Site operations, user support, enterprise application management.</p>
-                </div>
-            </div>
-
-            <div class="timeline-item reveal">
-                <span class="node"></span>
-                <div class="timeline-year">Jan 2019 to Mar 2025</div>
-                <div class="timeline-content">
-                    <h3>Manager – IT</h3>
-                    <p><div class="timeline-company">CMS Computers India Ltd.</div><br>Service delivery, governance, infrastructure and team leadership.</p>
-                </div>
-            </div>
-
-            <div class="timeline-item is-current reveal">
-                <span class="node"></span>
-                <div class="timeline-year">Apr 2025 — Current</div>
-                <div class="timeline-content">
-                    <h3>Assistant General Manager IT</h3>
-                    <p><div class="timeline-company">Trio Techdesign Pvt. Ltd.</div><br>YantraAI, Moodle LMS, monitoring platform modernization, and DC/DR resilience programs.</p>
-                </div>
-            </div>
-
+    <div class="timeline-item reveal">
+        <span class="node"></span>
+        <div class="timeline-year">Jun 2010 to Jul 2016</div>
+        <div class="timeline-content">
+            <h3>IT Service Engineer</h3>
         </div>
+        <div class="timeline-popover">
+            <p>Handled infrastructure support, field operations, and end-user services across multiple sites, building the hands-on foundation for everything that followed.</p>
+        </div>
+    </div>
+
+    <div class="timeline-item reveal">
+        <span class="node"></span>
+        <div class="timeline-year">Aug 2016 to Jan 2019</div>
+        <div class="timeline-content">
+            <h3>IT Incharge</h3>
+        </div>
+        <div class="timeline-popover">
+            <p>Owned site-level IT operations, user support, and enterprise application management, stepping into the first layer of operational responsibility.</p>
+        </div>
+    </div>
+
+    <div class="timeline-item reveal">
+        <span class="node"></span>
+        <div class="timeline-year">Jan 2019 to Mar 2025</div>
+        <div class="timeline-content">
+            <h3>Manager – IT</h3>
+        </div>
+        <div class="timeline-popover">
+            <p>Led service delivery and governance for the IT function, managing infrastructure and a growing team while formalising process discipline.</p>
+        </div>
+    </div>
+
+    <div class="timeline-item is-current reveal">
+        <span class="node"></span>
+        <div class="timeline-year">Apr 2025 — Current</div>
+        <div class="timeline-content">
+            <h3>Assistant General Manager IT</h3>
+        </div>
+        <div class="timeline-popover">
+            <p>Driving YantraAI, Moodle LMS, monitoring platform modernization, and DC/DR resilience programs across the organization.</p>
+        </div>
+    </div>
+
+</div>
     </div>
 </section>
 
@@ -370,6 +378,18 @@
     } else {
         revealEls.forEach(el => el.classList.add('is-visible'));
     }
+</script>
+
+<script>
+    // Timeline popover — tap to toggle on touch devices
+    document.querySelectorAll('.timeline-item').forEach(item => {
+        item.addEventListener('click', (e) => {
+            if (window.innerWidth > 768) return;
+            const isOpen = item.classList.contains('is-open');
+            document.querySelectorAll('.timeline-item').forEach(i => i.classList.remove('is-open'));
+            if (!isOpen) item.classList.add('is-open');
+        });
+    });
 </script>
 
 </body>
