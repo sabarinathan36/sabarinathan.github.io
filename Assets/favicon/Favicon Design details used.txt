@@ -1,0 +1,6 @@
+Favicon Design details used
+
+Background: #15171C
+Accent (text + border): #E0A23A
+Style: Bold centered “S”, minimal, high contrast
+Border: Subtle scaling per size for clarity at small resolutions
