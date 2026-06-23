@@ -513,10 +513,10 @@ a{ color:inherit; text-decoration:none; }
 
 .timeline-company{
     font-family:var(--font-mono);
-    font-size:11.5px;
-    letter-spacing:0.04em;
-    color:var(--paper-faint);
-    margin-top:5px;
+    font-size:13px;
+    letter-spacing:0.03em;
+    color:var(--paper-dim);
+    margin-top:6px;
 }
 
 .timeline-popover{
