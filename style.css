@@ -756,16 +756,15 @@ INSIGHT CARDS
 
 .insight-grid{
     display:grid;
-    grid-template-columns:
-        repeat(auto-fit,minmax(320px,380px));
-    gap:24px;
+    grid-template-columns:repeat(4, 1fr);
+    gap:20px;
 }
 
 .insight-card{
 background:var(--surface);
 border:1px solid var(--line);
 border-radius:var(--radius-md);
-padding:28px;
+padding:20px;
 transition:all .25s ease;
 }
 
@@ -786,11 +785,13 @@ color:var(--paper-dim);
 }
 
 .insight-card h3{
-margin-bottom:12px;
+line-height:1.3;
+margin-bottom:10px;
 }
 
 .insight-card p{
-margin-bottom:16px;
+margin-bottom:14px;
+line-height:1.6;
 color:var(--paper-dim);
 }
 
