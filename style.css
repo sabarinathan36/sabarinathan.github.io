@@ -938,7 +938,15 @@ font-weight:600;
 .insight-grid{
     margin-top:0 !important;
 }
-
+.insight-date{
+    font-family:var(--font-mono);
+    font-size:10px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--paper-faint);
+    opacity:0.7;
+    white-space:nowrap;
+}
 /* ======================================
 ARTICLE PAGES
 ====================================== */
