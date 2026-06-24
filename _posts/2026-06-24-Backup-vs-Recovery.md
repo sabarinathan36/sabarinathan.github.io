@@ -1,3 +1,9 @@
+---
+layout: post
+title: "Backup vs Recovery: Why Having Backups Is Not Enough"
+category: Business Continuity
+---
+
 # Backup vs Recovery: Why Having Backups Is Not Enough
 
 ## Introduction
