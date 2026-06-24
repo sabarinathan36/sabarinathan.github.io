@@ -70,6 +70,9 @@ title: Insights
             <span class="insight-category">
                 {{ post.category }}
             </span>
+               <span class="insight-date">
+            {{ post.date | date: "%d %b %Y" }}
+              </span>
 
             <h3>
                 {{ post.title }}
