@@ -1,129 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no" />
+<title>Sabari Nathan — Digital Business Card</title>
+<meta name="description" content="Sabari Nathan — IT Operations & Digital Transformation Leader" />
 
-    <title>Sabari Nathan | Connect</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <meta name="description" content="Connect with Sabari Nathan - IT Operations & Digital Transformation Leader">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <link rel="stylesheet" href="connect.css">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="connect.css" />
 </head>
-
 <body>
 
-<div class="container">
+  <div class="backdrop" aria-hidden="true"></div>
 
-    <!-- Profile Card -->
+  <main class="card" id="card">
 
-    <div class="card">
+    <section class="identity" data-animate="1">
+      <div class="avatar-ring">
+        <img class="avatar" src="profileimage.jpeg" alt="Sabari Nathan" />
+      </div>
 
-        <img src="profileimage.jpeg" class="profile" alt="Sabari Nathan">
+      <h1 class="name">Sabari Nathan</h1>
+      <p class="role">IT Operations &amp; Digital Transformation Leader</p>
+      <p class="tagline">Helping organizations modernize IT through Infrastructure, AI &amp; Governance.</p>
+    </section>
 
-        <h1>Sabari Nathan</h1>
+    <section class="actions" data-animate="2" aria-label="Contact actions">
 
-        <h2>IT Operations & Digital Transformation Leader</h2>
+      <a class="action-card" href="tel:+919744230986" data-action="call">
+        <span class="action-icon"><i class="fa-solid fa-phone"></i></span>
+        <span class="action-label">Call</span>
+      </a>
 
-        <p class="tagline">
-            Infrastructure • AI • IT Governance • Service Management
-        </p>
+      <a class="action-card" href="https://wa.me/919744230986" target="_blank" rel="noopener" data-action="whatsapp">
+        <span class="action-icon"><i class="fa-brands fa-whatsapp"></i></span>
+        <span class="action-label">WhatsApp</span>
+      </a>
 
-        <!-- Statistics -->
+      <a class="action-card" href="mailto:sabarinathan36@gmail.com" data-action="email">
+        <span class="action-icon"><i class="fa-solid fa-envelope"></i></span>
+        <span class="action-label">Email</span>
+      </a>
 
-        <div class="stats">
+      <a class="action-card" href="https://www.linkedin.com/in/sabarinathan-chelladurai/" target="_blank" rel="noopener" data-action="linkedin">
+        <span class="action-icon"><i class="fa-brands fa-linkedin-in"></i></span>
+        <span class="action-label">LinkedIn</span>
+      </a>
 
-            <div>
-                <span>17+</span>
-                <small>Years</small>
-            </div>
+      <a class="action-card" href="https://sabarinathan.co.in" target="_blank" rel="noopener" data-action="portfolio">
+        <span class="action-icon"><i class="fa-solid fa-globe"></i></span>
+        <span class="action-label">Portfolio</span>
+      </a>
 
-            <div>
-                <span>60+</span>
-                <small>Engineers</small>
-            </div>
+      <a class="action-card" href="sabari_nathan_16yrs_resume.pdf" target="_blank" rel="noopener" data-action="resume">
+        <span class="action-icon"><i class="fa-solid fa-file-lines"></i></span>
+        <span class="action-label">Resume</span>
+      </a>
 
-            <div>
-                <span>25K+</span>
-                <small>Assets</small>
-            </div>
+    </section>
 
-            <div>
-                <span>27</span>
-                <small>Locations</small>
-            </div>
+    <section class="save-contact-wrap" data-animate="3">
+      <button class="save-contact" id="saveContactBtn" type="button">
+        <span class="action-icon"><i class="fa-solid fa-circle-plus"></i></span>
+        <span>Save Contact</span>
+      </button>
+    </section>
 
-        </div>
+    <footer class="footer" data-animate="4">
+      <p>© 2026 Sabari Nathan</p>
+    </footer>
 
-    </div>
+  </main>
 
-    <!-- Actions -->
-
-    <div class="actions">
-
-        <a href="tel:+919744230986" class="btn">
-            <i class="fa-solid fa-phone"></i>
-            Call
-        </a>
-
-        <a href="https://wa.me/919744230986" class="btn">
-            <i class="fa-brands fa-whatsapp"></i>
-            WhatsApp
-        </a>
-
-        <a href="mailto:sabarinathan36@gmail.com" class="btn">
-            <i class="fa-solid fa-envelope"></i>
-            Email
-        </a>
-
-        <a href="https://www.linkedin.com/in/sabarinathan-chelladurai/" class="btn" target="_blank">
-            <i class="fa-brands fa-linkedin"></i>
-            LinkedIn
-        </a>
-
-        <a href="https://sabarinathan.co.in" class="btn" target="_blank">
-            <i class="fa-solid fa-globe"></i>
-            Portfolio
-        </a>
-
-        <a href="sabari_nathan_16yrs_resume.pdf" class="btn" target="_blank">
-            <i class="fa-solid fa-file"></i>
-            Resume
-        </a>
-
-        <a href="#" class="btn">
-            <i class="fa-solid fa-address-card"></i>
-            Save Contact
-        </a>
-
-    </div>
-
-    <!-- About -->
-
-    <div class="about">
-
-        <h3>About</h3>
-
-        <p>
-
-Helping organizations modernize IT through infrastructure transformation,
-AI enablement, IT governance, cloud technologies and operational excellence.
-
-        </p>
-
-    </div>
-
-</div>
-
-<script src="connect.js"></script>
-
+  <script src="connect.js"></script>
 </body>
 </html>
