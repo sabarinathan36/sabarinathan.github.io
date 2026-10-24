@@ -2,10 +2,8 @@
 layout: post
 title: "Backup vs Recovery: Why Having Backups Is Not Enough"
 category: Business Continuity
+excerpt: "Green backup reports do not guarantee business continuity. Why the ability to recover matters more than the backup itself."
 ---
-
-# Backup vs Recovery: Why Having Backups Is Not Enough
-
 ## Introduction
 
 One of the most common misconceptions in IT is assuming that successful backups automatically guarantee business continuity.

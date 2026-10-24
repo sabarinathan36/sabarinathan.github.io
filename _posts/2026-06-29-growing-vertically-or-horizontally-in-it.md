@@ -2,10 +2,8 @@
 layout: post
 title: "Are You Growing Vertically or Horizontally in IT?"
 category: "Leadership"
+excerpt: "Deep expertise in one technology is no longer enough. Why understanding how IT domains connect drives long-term career growth."
 ---
-
-# Are You Growing Vertically or Horizontally in IT?
-
 One of the biggest misconceptions in the IT industry is believing that becoming an expert in a single technology is enough for long-term career growth.
 
 While deep technical expertise is valuable, modern enterprise environments demand professionals who understand how different technology domains connect to support business objectives.

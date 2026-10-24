@@ -2,10 +2,8 @@
 layout: post
 title: "Security Tools vs Security Governance"
 category: Cybersecurity
+excerpt: "Organisations keep buying security tools, yet incidents keep happening. Technology supports security, but governance creates it."
 ---
-
-# Security Tools vs Security Governance
-
 Organizations today invest significantly in cybersecurity technologies. Firewalls, endpoint protection platforms, SIEM solutions, vulnerability scanners, identity management systems, threat intelligence services, and security monitoring tools have become standard components of modern security programs.
 
 Despite these investments, security incidents continue to occur across organizations of all sizes.

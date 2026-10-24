@@ -2,9 +2,8 @@
 layout: post
 title: "From Reactive IT to Proactive IT: Building Systems That Prevent Problems"
 category: IT Leadership
+excerpt: "Fixing incidents quickly is expected. Preventing them is what turns IT from a support function into a business enabler."
 ---
-# From Reactive IT to Proactive IT: Building Systems That Prevent Problems
-
 ## Introduction
 
 One of the biggest shifts I have experienced throughout my IT career is

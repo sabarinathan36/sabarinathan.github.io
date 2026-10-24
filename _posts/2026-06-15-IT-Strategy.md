@@ -2,6 +2,7 @@
 layout: post
 title: "My Perspective on Building a Practical IT Strategy"
 category: IT Governance
+excerpt: "Successful IT is not measured by uptime or ticket closure alone. A practical strategy ties technology investment to business outcomes."
 ---
 
 ## Introduction

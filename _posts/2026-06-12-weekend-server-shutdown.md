@@ -2,6 +2,7 @@
 layout: post
 title: "Should Servers Be Shut Down on Weekends?"
 category: Infrastructure & Business Continuity
+excerpt: "Powering servers down at weekends looks like an easy cost saving. Here is why it is rarely the right call for enterprise infrastructure."
 ---
 
 Many organizations periodically revisit a familiar question:

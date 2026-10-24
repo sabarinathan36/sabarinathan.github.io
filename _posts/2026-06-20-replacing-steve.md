@@ -3,6 +3,7 @@
 layout: post
 title: "Replacing Steve"
 category: Cybersecurity Governance
+excerpt: "A vulnerability is a weakness; a risk is its impact on the business. A real-world scenario that shows why the difference matters."
 ---
 
 One of the most common misconceptions in cybersecurity is treating **risk management** and **vulnerability management** as the same thing.

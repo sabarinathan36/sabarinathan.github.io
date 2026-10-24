@@ -2,6 +2,7 @@
 layout: post
 title: "Asset Discovery: The First Step Toward Effective IT Governance"
 category: Business Continuity
+excerpt: "You cannot secure, monitor or manage what you cannot see. Why asset discovery is the foundation of IT governance."
 ---
 
 ## Introduction
