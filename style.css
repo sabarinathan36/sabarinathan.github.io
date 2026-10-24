@@ -1162,3 +1162,53 @@ text-decoration: underline;
 body.insights-page section.section{
     padding:20px var(--gutter) !important;
 }
+
+/* ============================================================
+   SELECTED OUTCOMES
+   ============================================================ */
+.outcome-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    border-top:1px solid var(--line);
+}
+.outcome-card{
+    padding:24px 28px;
+    border-right:1px dashed var(--line-strong);
+}
+.outcome-card:last-child{ border-right:none; }
+.outcome-card h3{
+    font-family:var(--font-display);
+    font-weight:600;
+    font-size:40px;
+    line-height:1.1;
+    color:var(--amber);
+    margin-bottom:8px;
+}
+.outcome-label{
+    font-weight:600;
+    color:var(--paper);
+    margin-bottom:6px;
+}
+.outcome-context{
+    font-size:14px;
+    line-height:1.55;
+    color:var(--paper-dim);
+}
+
+/* ============================================================
+   LATEST INSIGHTS (HOME)
+   ============================================================ */
+.insight-grid--home{ grid-template-columns:repeat(3,1fr); }
+.insight-grid--home .insight-card{ padding-top:22px; }
+.insight-grid--home .insight-card h3{ font-family:var(--font-display); font-size:20px; padding-right:4px; }
+.view-all{ margin-top:24px; display:inline-flex; }
+
+@media (max-width:980px){
+    .insight-grid--home{ grid-template-columns:1fr 1fr; }
+}
+@media (max-width:768px){
+    .outcome-grid{ grid-template-columns:1fr; }
+    .outcome-card{ border-right:none; border-bottom:1px dashed var(--line-strong); padding:20px 0; }
+    .outcome-card:last-child{ border-bottom:none; }
+    .insight-grid--home{ grid-template-columns:1fr; }
+}

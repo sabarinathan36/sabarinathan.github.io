@@ -1,9 +1,18 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sabari Nathan C | IT Operations & Digital Transformation Leader</title>
+    <meta name="description" content="IT and digital transformation leader with 16+ years in enterprise infrastructure, cybersecurity governance, service management and AI adoption.">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Sabari Nathan C | Head of IT &amp; Digital Transformation">
+    <meta property="og:description" content="IT and digital transformation leader with 16+ years in enterprise infrastructure, cybersecurity governance, service management and AI adoption.">
+    <meta property="og:url" content="https://sabarinathan.co.in/">
+    <meta property="og:image" content="https://sabarinathan.co.in/profileimage.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;0,900;1,400;1,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -208,6 +217,38 @@
 
 <div class="divider"></div>
 
+<section class="outcomes-section section" id="outcomes">
+    <div class="section-inner">
+
+        <div class="section-title reveal">
+            <span class="eyebrow">Selected Outcomes</span>
+            <h2>Results, not just responsibilities</h2>
+            <p>Measurable improvements delivered through monitoring, process discipline and governance.</p>
+        </div>
+
+        <div class="outcome-grid reveal">
+            <div class="outcome-card">
+                <h3>40%</h3>
+                <p class="outcome-label">Faster average resolution</p>
+                <p class="outcome-context">Centralised monitoring with proactive alerting and automated escalation · CMS Computers</p>
+            </div>
+            <div class="outcome-card">
+                <h3>25%</h3>
+                <p class="outcome-label">Less infrastructure downtime</p>
+                <p class="outcome-context">Proactive monitoring, structured change management and vendor coordination · TCS</p>
+            </div>
+            <div class="outcome-card">
+                <h3>25,000+</h3>
+                <p class="outcome-label">Assets governed</p>
+                <p class="outcome-context">IT asset management across hardware, licensing and audit readiness · CMS Computers</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<div class="divider"></div>
+
 <section class="portfolio-section section" id="portfolio">
     <div class="section-inner">
 
@@ -318,6 +359,34 @@
     </div>
 </section>
 
+<div class="divider"></div>
+
+<section class="latest-insights section" id="insights">
+    <div class="section-inner">
+
+        <div class="section-title reveal">
+            <span class="eyebrow">Latest Insights</span>
+            <h2>Recent thinking on IT, governance and AI</h2>
+            <p>New articles every few days on the practical side of running and transforming enterprise IT.</p>
+        </div>
+
+        <div class="insight-grid insight-grid--home reveal">
+            {% for post in site.posts limit:3 %}
+            <article class="insight-card">
+                <span class="insight-category">{{ post.category }}</span>
+                <span class="insight-date">{{ post.date | date: "%d %b %Y" }}</span>
+                <h3>{{ post.title }}</h3>
+                <p>{{ post.excerpt | strip_html | truncate: 140 }}</p>
+                <a href="{{ post.url }}" class="article-link">Read Article →</a>
+            </article>
+            {% endfor %}
+        </div>
+
+        <a href="insights.html" class="btn btn-secondary view-all reveal">View all articles →</a>
+
+    </div>
+</section>
+
 <section class="capabilities section" id="capabilities">
     <div class="section-inner">
 
@@ -338,6 +407,14 @@
                 <span class="chip">CCNA</span>
                 <span class="chip">RHEL</span>
                 <span class="chip">CISM — In Progress</span>
+            </div>
+        </div>
+
+        <div class="cap-group reveal">
+            <span class="cap-label">Education</span>
+            <div class="chip-grid">
+                <span class="chip">MBA, Information Systems Management · Manipal University Jaipur</span>
+                <span class="chip">B.E., Computer Science &amp; Engineering · Anna University</span>
             </div>
         </div>
 
