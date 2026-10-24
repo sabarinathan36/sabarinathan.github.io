@@ -852,6 +852,7 @@ INSIGHT CARDS
 }
 
 .insight-card{
+position:relative;
 background:var(--surface);
 border:1px solid var(--line);
 border-radius:var(--radius-md);
@@ -940,9 +941,8 @@ font-weight:600;
 }
 .insight-date{
     position:absolute;
-    right:0;
-    top:50%;
-    transform:translateY(-50%);
+    top:28px;
+    right:20px;
     font-family:var(--font-mono);
     font-size:11px;
     color:var(--paper-faint);
