@@ -3,8 +3,14 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no" />
-<title>Sabari Nathan — Digital Business Card</title>
-<meta name="description" content="Sabari Nathan — IT Operations & Digital Transformation Leader" />
+<title>Sabari Nathan C — Digital Business Card</title>
+<meta name="description" content="Sabari Nathan C — Head of IT &amp; Digital Transformation, Navins Housing and Property Pvt Ltd. Save my contact in one tap." />
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="Sabari Nathan C — Digital Business Card" />
+<meta property="og:description" content="Head of IT &amp; Digital Transformation, Navins Housing and Property Pvt Ltd. Tap to call, message or save my contact." />
+<meta property="og:url" content="https://sabarinathan.co.in/connect" />
+<meta property="og:image" content="https://sabarinathan.co.in/profileimage.jpeg" />
+<meta name="twitter:card" content="summary" />
 
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230F172A'/%3E%3Ctext x='32' y='41' font-family='Arial, sans-serif' font-size='26' font-weight='700' fill='%2338BDF8' text-anchor='middle'%3ESN%3C/text%3E%3C/svg%3E" />
 
@@ -24,12 +30,12 @@
 
     <section class="identity" data-animate="1">
       <div class="avatar-ring">
-        <img class="avatar" src="profileimage.jpeg" alt="Sabari Nathan" />
+        <img class="avatar" src="profileimage.jpeg" alt="Sabari Nathan C" />
       </div>
 
-      <h1 class="name">Sabari Nathan</h1>
-      <span class="role-pill">IT Operations &amp; Digital Transformation Leader</span>
-      <p class="greeting">Always happy to connect and collaborate.</p>
+      <h1 class="name">Sabari Nathan C</h1>
+      <span class="role-pill">Head of IT &amp; Digital Transformation</span>
+      <p class="company">Navins Housing and Property Pvt Ltd</p>
     </section>
 
     <section class="actions" data-animate="2" aria-label="Contact actions">
@@ -71,13 +77,29 @@
         <span class="action-icon"><i class="fa-solid fa-circle-plus"></i></span>
         <span>Save Contact</span>
       </button>
+      <button class="qr-button" id="qrBtn" type="button" aria-label="Show QR code" aria-haspopup="dialog">
+        <i class="fa-solid fa-qrcode"></i>
+      </button>
     </section>
 
     <footer class="footer" data-animate="4">
-      <p>© 2026 Sabari Nathan</p>
+      <p>© 2026 Sabari Nathan C</p>
     </footer>
 
   </main>
+
+  <div class="qr-modal" id="qrModal" role="dialog" aria-modal="true" aria-labelledby="qrTitle" hidden>
+    <div class="qr-sheet">
+      <p class="qr-title" id="qrTitle">Scan to open my card</p>
+      <img class="qr-image" src="Assets/connect/qr.png" alt="QR code linking to sabarinathan.co.in/connect" width="240" height="240" />
+      <p class="qr-url">sabarinathan.co.in/connect</p>
+      <div class="qr-actions">
+        <a class="qr-link" href="Assets/connect/qr.png" download="SabariNathan-QR.png"><i class="fa-solid fa-download"></i> QR code</a>
+        <a class="qr-link" href="Assets/connect/lockscreen.png" download="SabariNathan-LockScreen.png"><i class="fa-solid fa-mobile-screen"></i> Lock screen</a>
+      </div>
+      <button class="qr-close" id="qrClose" type="button">Close</button>
+    </div>
+  </div>
 
   <script src="connect.js"></script>
 </body>
