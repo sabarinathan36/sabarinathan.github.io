@@ -1,0 +1,8 @@
+# Nathan's Tech videos shown on the home page (newest first). Add a line when a new video goes public.
+channel: "https://www.youtube.com/@NathansTechQ"
+handle: "@NathansTechQ"
+trailer: "e4TpeF2lrCk"
+videos:
+  - id: "W05Pdgy92-E"
+    label: "Cybersecurity Awareness · S1E1"
+    title: "Passwords in a Notebook?"

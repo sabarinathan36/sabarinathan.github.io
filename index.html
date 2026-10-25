@@ -46,6 +46,7 @@
         <li><a href="#journey">Journey</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="insights.html">Insights</a></li>
+        <li><a href="#videos">Videos</a></li>
         <li><a href="#capabilities">Capabilities</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
@@ -371,6 +372,40 @@
     </div>
 </section>
 
+<section class="videos-section section" id="videos">
+    <div class="section-inner">
+
+        <div class="section-title reveal">
+            <span class="eyebrow">Nathan's Tech · YouTube</span>
+            <h2>Cybersecurity and IT, made simple</h2>
+            <p>Scam alerts, safe habits, and a family cartoon series on real-life scams. New episodes every Saturday.</p>
+        </div>
+
+        <div class="video-layout reveal">
+            <div class="video-frame" data-yt="{{ site.data.youtube.trailer }}">
+                <img src="https://i.ytimg.com/vi/{{ site.data.youtube.trailer }}/hqdefault.jpg" alt="Nathan's Tech channel trailer" loading="lazy">
+                <button class="video-play" aria-label="Play the channel trailer"><span></span></button>
+            </div>
+
+            <div class="video-side">
+                {% for v in site.data.youtube.videos limit:3 %}
+                <a class="video-card" href="https://www.youtube.com/watch?v={{ v.id }}" target="_blank" rel="noopener">
+                    <img src="https://i.ytimg.com/vi/{{ v.id }}/mqdefault.jpg" alt="{{ v.title }}" loading="lazy">
+                    <span class="video-meta">
+                        <span class="insight-category">{{ v.label }}</span>
+                        <strong>{{ v.title }}</strong>
+                    </span>
+                </a>
+                {% endfor %}
+                <a href="{{ site.data.youtube.channel }}?sub_confirmation=1" class="btn btn-youtube" target="_blank" rel="noopener">▶&nbsp; Subscribe on YouTube</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<div class="divider"></div>
+
 <section class="capabilities section" id="capabilities">
     <div class="section-inner">
 
@@ -440,6 +475,10 @@
                     <a class="value" href="https://www.linkedin.com/in/sabarinathan-chelladurai/" target="_blank" rel="noopener">linkedin.com/in/sabarinathan</a>
                 </div>
                 <div class="contact-row">
+                    <span class="label">YouTube</span>
+                    <a class="value" href="https://www.youtube.com/@NathansTechQ" target="_blank" rel="noopener">youtube.com/@NathansTechQ</a>
+                </div>
+                <div class="contact-row">
                     <span class="label">Location</span>
                     <span class="value">Chennai, India</span>
                 </div>
@@ -453,10 +492,15 @@
 </section>
 
 <footer>
-    <p>© 2026 Sabari Nathan — IT Operations · Digital Transformation · AI &amp; Governance Leader · <a href="/privacy.html" style="color:inherit;text-decoration:underline">Privacy</a></p>
+    <p>© 2026 Sabari Nathan — IT Operations · Digital Transformation · AI &amp; Governance Leader · <a href="https://www.youtube.com/@NathansTechQ" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">YouTube</a> · <a href="/privacy.html" style="color:inherit;text-decoration:underline">Privacy</a></p>
 </footer>
 
 <script>
+    // Trailer: load the YouTube player only when clicked (keeps the page fast)
+    document.querySelectorAll('.video-frame').forEach(f => f.addEventListener('click', () => {
+        f.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + f.dataset.yt +
+            '?autoplay=1&rel=0" title="Nathan\'s Tech channel trailer" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
+    }, {once: true}));
     // Mobile nav toggle
     const navToggle = document.getElementById('navToggle');
     const navLinks = document.getElementById('navLinks');

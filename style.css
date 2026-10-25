@@ -1212,3 +1212,26 @@ body.insights-page section.section{
     .outcome-card:last-child{ border-bottom:none; }
     .insight-grid--home{ grid-template-columns:1fr; }
 }
+
+
+/* ---------- Nathan's Tech videos ---------- */
+.video-layout{ display:grid; grid-template-columns:1.6fr 1fr; gap:28px; align-items:start; }
+.video-frame{ position:relative; aspect-ratio:16/9; border-radius:var(--radius-md); overflow:hidden; border:1px solid var(--line); background:#000; cursor:pointer; }
+.video-frame img, .video-frame iframe{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; border:0; }
+.video-frame:hover img{ transform:scale(1.02); }
+.video-frame img{ transition:transform .4s ease; }
+.video-play{ position:absolute; left:50%; top:50%; width:78px; height:54px; margin:-27px 0 0 -39px; border:0; border-radius:14px; background:#CC0000; cursor:pointer; box-shadow:0 10px 30px rgba(0,0,0,.45); }
+.video-play span{ position:absolute; left:31px; top:15px; border-style:solid; border-width:12px 0 12px 20px; border-color:transparent transparent transparent #fff; }
+.video-side{ display:flex; flex-direction:column; gap:14px; }
+.video-card{ display:flex; gap:14px; align-items:center; padding:10px; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-md); color:var(--paper); text-decoration:none; transition:all .25s ease; }
+.video-card:hover{ border-color:var(--amber); transform:translateY(-3px); }
+.video-card img{ width:150px; aspect-ratio:16/9; object-fit:cover; border-radius:var(--radius-sm); flex:0 0 auto; }
+.video-meta{ display:flex; flex-direction:column; gap:6px; }
+.video-meta .insight-category{ margin-bottom:0; align-self:flex-start; }
+.video-meta strong{ font-family:var(--font-display); font-size:18px; line-height:1.3; }
+.btn-youtube{ background:#CC0000; color:#fff; border:1px solid #CC0000; justify-content:center; }
+.btn-youtube:hover{ background:#e00000; transform:translateY(-2px); box-shadow:0 10px 24px rgba(204,0,0,.3); }
+@media (max-width: 860px){
+    .video-layout{ grid-template-columns:1fr; }
+    .video-card img{ width:120px; }
+}
