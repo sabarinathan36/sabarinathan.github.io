@@ -377,14 +377,14 @@
     <div class="section-inner">
 
         <div class="section-title reveal">
-            <span class="eyebrow">Sabko · YouTube</span>
+            <span class="eyebrow">Nathan's Tech · YouTube</span>
             <h2>Cybersecurity and IT, made simple</h2>
             <p>Scam alerts, safe habits, and a family cartoon series on real-life scams. New episodes every Saturday.</p>
         </div>
 
         <div class="video-layout reveal">
             <div class="video-frame" data-yt="{{ site.data.youtube.trailer }}">
-                <img src="https://i.ytimg.com/vi/{{ site.data.youtube.trailer }}/hqdefault.jpg" alt="Sabko channel trailer" loading="lazy">
+                <img src="https://i.ytimg.com/vi/{{ site.data.youtube.trailer }}/hqdefault.jpg" alt="Nathan's Tech channel trailer" loading="lazy">
                 <button class="video-play" aria-label="Play the channel trailer"><span></span></button>
             </div>
 
@@ -500,7 +500,7 @@
     // Trailer: load the YouTube player only when clicked (keeps the page fast)
     document.querySelectorAll('.video-frame').forEach(f => f.addEventListener('click', () => {
         f.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + f.dataset.yt +
-            '?autoplay=1&rel=0" title="Sabko channel trailer" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
+            '?autoplay=1&rel=0" title="Nathan\'s Tech channel trailer" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
     }, {once: true}));
     // Mobile nav toggle
     const navToggle = document.getElementById('navToggle');
