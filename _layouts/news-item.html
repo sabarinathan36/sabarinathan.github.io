@@ -1,0 +1,60 @@
+---
+layout: default
+---
+
+<nav class="nav">
+    <div class="nav-mark">[<span>SN</span>] SABARI NATHAN C</div>
+    <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/insights.html">Insights</a></li>
+        <li><a href="/news.html">News</a></li>
+    </ul>
+</nav>
+
+<section class="section">
+<div class="section-inner article-container">
+
+<div class="article-breadcrumb">
+    <a href="/">← Home</a>
+    <span>/</span>
+    <a href="/news.html">Daily IT News</a>
+</div>
+
+<div class="article-header">
+    <span class="article-category">{{ page.category | default: "IT News" }}</span>
+    <h1 class="article-title">{{ page.title }}</h1>
+    <p class="article-meta">{{ page.date | date: "%d %B %Y" }} · Source: <a href="{{ page.source_url }}" target="_blank" rel="noopener">{{ page.source }}</a></p>
+</div>
+
+<div class="news-layout">
+    <div class="article-content">
+        <p class="news-lead">{{ page.summary }}</p>
+        {{ content }}
+        <p class="news-credit">
+            This is a summary of reporting by {{ page.source }}. For full details, read the original:
+            <a href="{{ page.source_url }}" target="_blank" rel="noopener">{{ page.source_title | default: page.title }}</a>.
+        </p>
+    </div>
+    {% if page.youtube_id %}
+    <aside class="news-short">
+        <div class="short-frame" data-yt="{{ page.youtube_id }}">
+            <img src="https://i.ytimg.com/vi/{{ page.youtube_id }}/oardefault.jpg" onerror="this.src='https://i.ytimg.com/vi/{{ page.youtube_id }}/hqdefault.jpg'" alt="Watch the 30-second briefing" loading="lazy">
+            <span class="short-play">▶ Watch the 30-second Short</span>
+        </div>
+    </aside>
+    {% endif %}
+</div>
+
+</div>
+</section>
+
+<footer>
+    <p>© 2026 Sabari Nathan — Cybersecurity · Governance · AI · IT Leadership</p>
+</footer>
+
+<script>
+document.querySelectorAll('.short-frame').forEach(f => f.addEventListener('click', () => {
+    f.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + f.dataset.yt +
+        '?autoplay=1&rel=0" title="Daily IT News Short" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
+}, {once: true}));
+</script>

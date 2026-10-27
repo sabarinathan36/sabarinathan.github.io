@@ -1235,3 +1235,32 @@ body.insights-page section.section{
     .video-layout{ grid-template-columns:1fr; }
     .video-card img{ width:120px; }
 }
+
+/* ============================================================
+DAILY IT NEWS
+============================================================ */
+
+.news-list{ display:grid; grid-template-columns:repeat(2, 1fr); gap:20px; }
+.news-card{ background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-md); padding:22px; transition:all .25s ease; }
+.news-card:hover{ transform:translateY(-4px); border-color:var(--amber); }
+.news-meta{ display:flex; flex-wrap:wrap; align-items:center; gap:10px; margin-bottom:12px; }
+.news-meta .insight-category{ margin-bottom:0; }
+.news-source{ font-family:var(--font-mono); font-size:11px; color:var(--paper-dim); }
+.news-card h3{ line-height:1.3; margin:0 0 10px; }
+.news-card h3 a{ color:var(--paper); text-decoration:none; }
+.news-card h3 a:hover{ color:var(--amber); }
+.news-card p{ margin-bottom:14px; line-height:1.6; color:var(--paper-dim); }
+.news-empty{ color:var(--paper-dim); }
+.news-layout{ display:grid; grid-template-columns:minmax(0, 1fr) 300px; gap:40px; align-items:start; }
+.news-lead{ font-size:1.15em; line-height:1.6; }
+.news-credit{ margin-top:32px; padding-top:16px; border-top:1px solid var(--line); font-size:.9em; color:var(--paper-dim); }
+.news-short{ position:sticky; top:24px; }
+.short-frame{ position:relative; aspect-ratio:9/16; border-radius:var(--radius-md); overflow:hidden; border:1px solid var(--line); background:#000; cursor:pointer; }
+.short-frame img, .short-frame iframe{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; border:0; }
+.short-play{ position:absolute; left:12px; right:12px; bottom:12px; padding:10px 12px; border-radius:999px; background:rgba(0,0,0,.7); color:#fff; font-weight:600; font-size:14px; text-align:center; }
+
+@media (max-width: 900px){
+    .news-list{ grid-template-columns:1fr; }
+    .news-layout{ grid-template-columns:1fr; }
+    .news-short{ position:static; max-width:320px; }
+}

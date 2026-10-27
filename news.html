@@ -1,0 +1,66 @@
+---
+layout: default
+title: Daily IT News
+excerpt: "The one IT and cybersecurity story leaders should know today, explained in plain English with what to do next."
+---
+
+<nav class="nav">
+    <div class="nav-mark">[<span>SN</span>] SABARI NATHAN C</div>
+
+<ul class="nav-links">
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="/insights.html">Insights</a></li>
+    <li><a href="/news.html">News</a></li>
+    <li><a href="/index.html#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="insights-hero hero">
+<div class="hero-content">
+    <div class="hero-text">
+        <p class="tagline">Cybersecurity · Patches · Regulation · AI</p>
+        <h1>Daily IT News</h1>
+        <h2>One story IT leaders should know today.</h2>
+        <p class="hero-description">
+            Each day, the most important IT and cybersecurity development explained in plain English: what happened, why it matters to your organisation and what to do now. Every summary links to the original reporting.
+        </p>
+    </div>
+</div>
+</section>
+<div class="divider"></div>
+<section class="section">
+<div class="section-inner">
+
+<div class="insights-header">
+    <span class="eyebrow">Latest Updates</span>
+    <h2>IT News Briefings</h2>
+    <p>Also as a 30-second Short every day on <a href="{{ site.data.youtube.channel }}" target="_blank" rel="noopener" class="article-link">Nathan's Tech</a>.</p>
+</div>
+
+{% assign items = site.news | sort: 'date' | reverse %}
+{% if items.size == 0 %}
+<p class="news-empty">The first briefing is on its way. Check back tomorrow.</p>
+{% else %}
+<div class="news-list">
+    {% for n in items %}
+    <article class="news-card">
+        <div class="news-meta">
+            <span class="insight-category">{{ n.category | default: "IT News" }}</span>
+            <span class="insight-date">{{ n.date | date: "%d %b %Y" }}</span>
+            <span class="news-source">Source: {{ n.source }}</span>
+        </div>
+        <h3><a href="{{ n.url }}">{{ n.title }}</a></h3>
+        <p>{{ n.summary }}</p>
+        <a href="{{ n.url }}" class="article-link">Why it matters &amp; what to do →</a>
+    </article>
+    {% endfor %}
+</div>
+{% endif %}
+
+</div>
+</section>
+
+<footer>
+    <p>© 2026 Sabari Nathan — Cybersecurity · Governance · AI · IT Leadership</p>
+</footer>

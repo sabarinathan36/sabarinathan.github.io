@@ -9,3 +9,7 @@ plugins:
 
 - jekyll-feed
 
+collections:
+  news:
+    output: true
+    permalink: /news/:year/:month/:day/:title/
