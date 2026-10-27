@@ -17,7 +17,7 @@ layout: default
 <div class="article-breadcrumb">
     <a href="/">← Home</a>
     <span>/</span>
-    <a href="/news.html">Daily IT News</a>
+    <a href="/news.html">Nathan's Short News</a>
 </div>
 
 <div class="article-header">
@@ -55,6 +55,6 @@ layout: default
 <script>
 document.querySelectorAll('.short-frame').forEach(f => f.addEventListener('click', () => {
     f.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + f.dataset.yt +
-        '?autoplay=1&rel=0" title="Daily IT News Short" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
+        '?autoplay=1&rel=0" title="Nathan's Short News" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
 }, {once: true}));
 </script>
