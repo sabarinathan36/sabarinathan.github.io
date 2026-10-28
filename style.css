@@ -1251,7 +1251,15 @@ DAILY IT NEWS
 .news-card h3 a:hover{ color:var(--amber); }
 .news-card p{ margin-bottom:14px; line-height:1.6; color:var(--paper-dim); }
 .news-empty{ color:var(--paper-dim); }
-.news-layout{ display:grid; grid-template-columns:minmax(0, 1fr) 300px; gap:40px; align-items:start; }
+.news-layout{ display:block; }
+.news-layout.has-short{ display:grid; grid-template-columns:minmax(0, 1fr) 280px; gap:40px; align-items:start; }
+/* news briefings: wider text, smaller headline, tighter spacing = less scrolling */
+.news-article{ max-width:1200px; }
+.news-article .article-header{ margin-bottom:1.75rem; }
+.news-article .article-title{ font-size:clamp(1.9rem, 3.2vw, 2.75rem); line-height:1.15; }
+.news-article .article-content{ line-height:1.7; font-size:1.05rem; }
+.news-article .article-content h2{ margin-top:1.6rem; margin-bottom:.5rem; }
+.news-article .article-content p{ margin-bottom:.9rem; }
 .news-lead{ font-size:1.15em; line-height:1.6; }
 .news-credit{ margin-top:32px; padding-top:16px; border-top:1px solid var(--line); font-size:.9em; color:var(--paper-dim); }
 .news-short{ position:sticky; top:24px; }

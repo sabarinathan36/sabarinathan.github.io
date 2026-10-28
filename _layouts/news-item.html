@@ -12,7 +12,7 @@ layout: default
 </nav>
 
 <section class="section">
-<div class="section-inner article-container">
+<div class="section-inner article-container news-article">
 
 <div class="article-breadcrumb">
     <a href="/">← Home</a>
@@ -26,7 +26,7 @@ layout: default
     <p class="article-meta">{{ page.date | date: "%d %B %Y" }} · Source: <a href="{{ page.source_url }}" target="_blank" rel="noopener">{{ page.source }}</a></p>
 </div>
 
-<div class="news-layout">
+<div class="news-layout{% if page.youtube_id %} has-short{% endif %}">
     <div class="article-content">
         <p class="news-lead">{{ page.summary }}</p>
         {{ content }}
